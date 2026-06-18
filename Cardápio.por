@@ -2,8 +2,10 @@ programa {
   funcao inicio() {
 
     inteiro opcao, total1
-    inteiro hamburguer = 18, refrigerante = 7, fritas = 10
-    logico  v_f, molho, batata, refri
+    inteiro hamburguer = 18
+    inteiro cachorro_quente = 12
+    logico  molho, batata, refri
+    logico maionese, batataP 
 
     escreva("========== CARDÁPIO ===========\n")
     escreva("1 - Hambúrguer - R$ 18,00\n")
@@ -31,14 +33,42 @@ programa {
       leia(batata)
 
       se(batata){
-        total1 = total1 + fritas
+        total1 = total1 + 10
       }
 
       escreva("Gostaria de acompanhar com refrigerante por R$ 7,00? (sim ou não)\n")
       leia(refri)
 
       se(refri){
-        total1 = total1 + refrigerante
+        total1 = total1 + 7
+      }
+
+      escreva("O total da sua compra foi de R$ ", total1, "\n")
+      escreva("Bom apetite!\n")
+      pare
+
+      caso 2:
+      total1 = cachorro_quente
+
+      escreva("Quer adicionar maionese por R$ 3,00? (sim ou não)\n")
+      leia(maionese)
+
+      se(maionese){
+        total1 = total1 + 3
+      }
+
+      escreva("Gostaria de adicionar batata palha por R$ 5,00? (sim ou não)\n")
+      leia(batataP)
+
+      se(batataP){
+        total1 = total1 + 5
+      }
+
+      escreva("Gostaria de acompanhar com refrigerante por R$ 7,00? (sim ou não)\n")
+      leia(refri)
+
+      se(refri){
+        total1 = total1 + 7
       }
 
       escreva("O total da sua compra foi de R$ ", total1, "\n")
