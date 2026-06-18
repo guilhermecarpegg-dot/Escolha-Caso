@@ -151,8 +151,13 @@ programa {
 
       escreva("O total da sua compra foi de R$ ", total1, "\n")
       escreva("Bom apetite!\n")
-      pare
+      pare  
+
+      
+  
       }
+      caso contrario:
+      escreva("opcao invalida!!")
     }
   }
 }
