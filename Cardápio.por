@@ -13,6 +13,7 @@ programa {
     logico gelo, limao
     inteiro sorvete = 10
     logico cobertura
+    inteiro idade
     
     escreva("========== CARDÁPIO ===========\n")
     escreva("1 - Hambúrguer - R$ 18,00\n")
@@ -48,6 +49,14 @@ programa {
       se(refri){
         total1 = total1 + 7
       }
+      
+      escreva("Informe a idade do cliente: ")
+      leia(idade)
+
+      se(idade <= 7){
+      total1 = total1 - (total1 * 0.10)
+      escreva("Desconto infantil de 10% aplicado!\n")
+}
 
       escreva("O total da sua compra foi de R$ ", total1, "\n")
       escreva("Bom apetite!\n")
@@ -76,6 +85,14 @@ programa {
       se(refri){
         total1 = total1 + 7
       }
+
+      escreva("Informe a idade do cliente: ")
+      leia(idade)
+
+      se(idade <= 7){
+      total1 = total1 - (total1 * 0.10)
+      escreva("Desconto infantil de 10% aplicado!\n")
+}
 
       escreva("O total da sua compra foi de R$ ", total1, "\n")
       escreva("Bom apetite!\n")
@@ -114,6 +131,14 @@ programa {
         total1 = total1 + 7
       }
 
+      escreva("Informe a idade do cliente: ")
+      leia(idade)
+
+      se(idade <= 7){
+     total1 = total1 - (total1 * 0.10)
+     escreva("Desconto infantil de 10% aplicado!\n")
+}
+
       escreva("O total da sua compra foi de R$ ", total1, "\n")
       escreva("Bom apetite!\n")
       pare
@@ -135,6 +160,13 @@ programa {
         total1 = total1 + 0.50
       }
 
+      escreva("Informe a idade do cliente: ")
+      leia(idade)
+
+      se(idade <= 7){
+      total1 = total1 - (total1 * 0.10)
+       escreva("Desconto infantil de 10% aplicado!\n")
+}
 
       escreva("O total da sua compra foi de R$ ", total1, "\n")
       escreva("Bom apetite!\n")
@@ -148,6 +180,14 @@ programa {
 
       se(cobertura){
         total1 = total1 + 4
+
+        escreva("Informe a idade do cliente: ")
+        leia(idade)
+
+        se(idade <= 7){
+        total1 = total1 - (total1 * 0.10)
+        escreva("Desconto infantil de 10% aplicado!\n")
+}
 
       escreva("O total da sua compra foi de R$ ", total1, "\n")
       escreva("Bom apetite!\n")
