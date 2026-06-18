@@ -11,6 +11,8 @@ programa {
     logico ketchup, milho, ervilha
     inteiro refrigerantes = 7
     logico gelo, limao
+    inteiro sorvete = 10
+    logico cobertura
     
     escreva("========== CARDÁPIO ===========\n")
     escreva("1 - Hambúrguer - R$ 18,00\n")
@@ -133,9 +135,24 @@ programa {
         total1 = total1 + 0.50
       }
 
+
       escreva("O total da sua compra foi de R$ ", total1, "\n")
       escreva("Bom apetite!\n")
       pare
+
+      caso 5:
+      total1 = sorvete
+
+      escreva("Quer adicionar cobertura por R$4,00? (sim ou não)\n")
+      leia(cobertura)
+
+      se(cobertura){
+        total1 = total1 + 4
+
+      escreva("O total da sua compra foi de R$ ", total1, "\n")
+      escreva("Bom apetite!\n")
+      pare
+      }
     }
   }
 }
